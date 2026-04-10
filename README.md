@@ -1,189 +1,39 @@
-# 🧠 CVision: Intelligent Resume Evaluation System (LangGraph + Mistral)
+# LangGraph + Mistral: CV Evaluator Agent System
 
-> A modular multi-agent AI system designed to evaluate resumes against job descriptions with explainable decision-making and automated communication.
+<img title="Logo" alt="Alt text" src="/imgs/logo.png">
 
----
+![python](https://img.shields.io/badge/Python-v3.10.15-blueviolet)
+![GitHub top language](https://img.shields.io/github/languages/top/DanielPuentee/LangGraph-Mistral-CV-Evaluator)
+[![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+[![Anaconda](https://img.shields.io/badge/Anaconda-44A833?logo=anaconda&logoColor=fff)](#)
+![GitHub last commit](https://img.shields.io/github/last-commit/DanielPuentee/LangGraph-Mistral-CV-Evaluator)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000?logo=githubcopilot&logoColor=fff)](#)
 
-## 🚀 Overview
+> Author: [Daniel Puente Viejo](https://www.linkedin.com/in/danielpuenteviejo/)
 
-**CVision** is an AI-powered resume evaluation pipeline that simulates a structured hiring workflow using multiple collaborating agents.
-
-Instead of relying on keyword matching, CVision uses **LLM-driven semantic reasoning** to:
-- Understand candidate profiles
-- Compare them against job requirements
-- Generate actionable hiring decisions
-- Draft professional HR communication
-
-This project demonstrates **real-world AI system design using LangGraph orchestration + Mistral LLM**.
-
----
-
-## 🧩 Core Idea
-
-Traditional hiring systems:
-❌ Keyword-based  
-❌ Rigid filtering  
-❌ No reasoning  
-
-CVision:
-✅ Context-aware understanding  
-✅ Multi-agent reasoning  
-✅ Explainable decisions  
+## Description
+Build a multi-agent system that evaluates CVs against job offers. Using LangGraph and Mistral, this project processes resumes, determines candidate fit, and generates email drafts for acceptance or rejection. It's an excellent starting point for learning LangGraph dynamics with a practical and impactful use case.
 
 ---
 
-## ⚙️ System Architecture
-
-```
-Input (CV + Job Description)
-        ↓
-[Agent 1] Resume Analyzer
-        ↓
-[Agent 2] Job Matcher
-        ↓
-[Agent 3] Decision Engine
-        ↓
-[Agent 4] Email Generator
-        ↓
-Final Output (Decision + Email)
-```
+## Features
+- **Sequential Agent Workflow**: Implements a step-by-step process for better understanding of LangGraph.
+- **CV Evaluation**: Compares resumes to job descriptions to assess candidate suitability.
+- **Email Automation**: Automatically generates draft emails with personalized feedback.
+- **Powered by LangGraph and Mistral**: Uses LangGraph for multi-agent management and Mistral for free LLM integration.
 
 ---
 
-## 🧠 Agent Responsibilities
+## Requirements
+- Python used version: **3.10.15**
 
-### 🔍 Resume Analyzer
-- Extracts candidate skills, experience, and context
-
-### 🎯 Job Matcher
-- Compares candidate profile with job requirements
-- Evaluates alignment
-
-### ⚖️ Decision Engine
-- Generates:
-  - Accept
-  - Reject
-  - Consider
-
-### ✉️ Email Generator
-- Produces professional HR-style responses
-
----
-
-## ✨ Features
-
-- Multi-agent workflow using LangGraph
-- Semantic CV evaluation (not keyword-based)
-- Explainable hiring decisions
-- Automated email drafting
-- Modular and extensible architecture
-
----
-
-## 🛠️ Tech Stack
-
-| Component | Technology |
-|----------|-----------|
-| Language | Python 3.10+ |
-| LLM | Mistral |
-| Framework | LangGraph |
-| LLM Integration | LangChain |
-| Env Config | python-dotenv |
-
----
-
-## 📦 Installation
-
-```bash
-git clone https://github.com/your-username/cvision-ai.git
-cd cvision-ai
+```python
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🔑 Environment Setup
-
-Create a `.env` file:
-
-```
-MISTRAL_API_KEY=your_api_key_here
-```
-
----
-
-## ▶️ Usage
-
-Run the system:
-
-```bash
-python main.py
-```
-
-Or explore notebook:
-
-```bash
-jupyter notebook tutorial.ipynb
-```
-
----
-
-## 📊 Sample Output
-
-```
-Candidate Score: 78%
-
-Decision: CONSIDER
-
-Reason:
-- Strong technical skills
-- Moderate domain experience
-
-Generated Email:
-"Dear Candidate,
-Thank you for applying..."
-```
-
----
-
-## 🌍 Use Cases
-
-- Resume screening automation
-- AI-based hiring assistants
-- HR workflow optimization
-- Educational projects for LLM systems
-
----
-
-## 🔮 Future Scope
-
-- Candidate ranking system
-- Batch resume processing
-- ATS integration
-- Dashboard (Streamlit)
-- Bias detection module
-
----
-
-## 🎯 Learning Outcomes
-
-- Multi-agent AI design
-- LangGraph orchestration
-- Prompt engineering
-- LLM-based evaluation pipelines
-
----
-
-## 📜 License
-
-MIT License
-
----
-
-## 💡 Project Highlight
-
-This project demonstrates how **LLMs can be structured into deterministic workflows** using agent-based architectures — a key concept in modern AI systems.
-
----
-
-⭐ If you found this useful, consider giving it a star!
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
