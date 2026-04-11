@@ -174,11 +174,6 @@ Thank you for applying..."
 
 ---
 
-## 📜 License
-
-MIT License
-
----
 
 ## 💡 Project Highlight
 
